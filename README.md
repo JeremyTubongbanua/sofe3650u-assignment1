@@ -75,6 +75,24 @@ If you are on a UNIX machine, you can run the `run.sh` script by running the fol
 ./run.sh
 ```
 
+### Output Example
+
+```sh
+jeremytubongbanua@Jeremys-MacBook-Air sofe3650u-assignment1 % ./run.sh 
+
+Canada:
+
+
+Apple price is 5.99! And it came from this tree: Maple!
+This is a laptop which was produced in: Canada and costs 3199.99!
+
+Mexico:
+
+
+Apple price is 3.99! And it came from this tree: Mexican Tree!
+This is a laptop which was produced in: Mexico and costs 1099.0!
+```
+
 ## Author
 
 - [JeremyTubongbanua](github.com/JeremyTubongbanua)
