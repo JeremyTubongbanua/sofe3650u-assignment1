@@ -78,3 +78,5 @@ If you are on a UNIX machine, you can run the `run.sh` script by running the fol
 ## Author
 
 - [JeremyTubongbanua](github.com/JeremyTubongbanua)
+- [Neh2332](github.com/Neh2332)
+- [JerryShum](github.com/JerryShum)
