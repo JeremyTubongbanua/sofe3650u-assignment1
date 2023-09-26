@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 
 import org.sofe3650.grocery.factories.CanadaProductFactory;
 import org.sofe3650.grocery.factories.MexicoProductFactory;
+import org.sofe3650.grocery.factories.ProductFactory;
 import org.sofe3650.grocery.products.Apple;
 import org.sofe3650.grocery.products.Laptop;
 import org.sofe3650.grocery.utility.PriceReader;
@@ -22,8 +23,8 @@ public class Driver {
 
         System.out.println("\nCanada:\n\n");
 
-        CanadaProductFactory canada = new CanadaProductFactory();
-        MexicoProductFactory mexico = new MexicoProductFactory();
+        ProductFactory canada = new CanadaProductFactory();
+        ProductFactory mexico = new MexicoProductFactory();
 
         Apple canadianApple = (Apple) canada.produceApple(canadaApplePrice);
         Laptop canadianLaptop = (Laptop) canada.produceLaptop(canadaLaptopPrice, 2.4);
