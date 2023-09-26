@@ -1,4 +1,4 @@
-# sofe3650u-a1
+# sofe3650u-assignment1
 
 ## Code Structure
 
