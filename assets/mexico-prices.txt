@@ -1,0 +1,4 @@
+apple
+3.99
+laptop
+1099
