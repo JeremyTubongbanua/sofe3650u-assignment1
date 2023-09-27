@@ -1,6 +1,6 @@
 package org.sofe3650.grocery.products;
 
-public class Laptop extends Product {
+public class Laptop implements Product {
 
     private double price;
     private double cpuSpeed;

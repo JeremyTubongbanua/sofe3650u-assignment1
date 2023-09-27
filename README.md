@@ -7,11 +7,11 @@ The code structure is as folllows:
 ```
 └── org/sofe3650u/grocery/
     ├── factories/
-    │   ├── ProductFactory.java (abstract)
+    │   ├── ProductFactory.java (interface)
     │   ├── CanadaProductFactory.java
     │   └── MexicoProductFactory.java
     ├── products/
-    │   ├── Product.java (interface)
+    │   ├── Product.java (abstract class)
     │   ├── Apple.java
     │   └── Laptop.java
     ├── utility/
@@ -26,9 +26,9 @@ The code structure is as folllows:
 
 ### Factories
 
-- `ProductFactory.java (abstract)` - abstract factory class that defines abstract methods for creating objects of type `Product`
-- `CanadaProductFactory.java` - concrete factory class that implements `ProductFactory` and returns objects of type `Apple` and `Laptop` with special Canadian attributes
-- `MexicoProductFactory.java` - concrete factory class that implements `ProductFactory` and returns objects of type `Apple` and `Laptop` with special Mexican attributes
+- `ProductFactory.java (interface)` - interface factory class that defines abstract methods for creating objects of type `Product`
+- `CanadaProductFactory.java` - concrete factory class that extends `ProductFactory` and returns objects of type `Apple` and `Laptop` with special Canadian attributes
+- `MexicoProductFactory.java` - concrete factory class that extends `ProductFactory` and returns objects of type `Apple` and `Laptop` with special Mexican attributes
 
 ### Utility
 
