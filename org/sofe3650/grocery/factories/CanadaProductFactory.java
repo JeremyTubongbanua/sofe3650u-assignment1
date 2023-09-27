@@ -4,7 +4,7 @@ import org.sofe3650.grocery.products.Apple;
 import org.sofe3650.grocery.products.Laptop;
 import org.sofe3650.grocery.products.Product;
 
-public class CanadaProductFactory extends ProductFactory {
+public class CanadaProductFactory implements ProductFactory {
 
     @Override
     public Product produceApple(double price) {
