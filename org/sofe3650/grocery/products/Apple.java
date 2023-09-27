@@ -1,8 +1,7 @@
 package org.sofe3650.grocery.products;
 
-public class Apple implements Product {
+public class Apple extends Product {
     
-    private double price; // the price of the apple
     private String tree; // the kind of tree it came from
 
     public Apple(double price, String tree) {
