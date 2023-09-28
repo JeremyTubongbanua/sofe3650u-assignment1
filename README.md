@@ -5,21 +5,36 @@
 The code structure is as folllows:
 
 ```
-└── org/sofe3650u/grocery/
-    ├── factories/
-    │   ├── ProductFactory.java (interface)
-    │   ├── CanadaProductFactory.java
-    │   └── MexicoProductFactory.java
-    ├── products/
-    │   ├── Product.java (abstract class)
-    │   ├── Apple.java
-    │   └── Laptop.java
-    ├── utility/
-    │   └── PriceReader.java
-    └── Driver.java
+.
+├── org/sofe3650u/grocery/
+│   ├── factories/
+│   │   ├── ProductFactory.java (abstract)
+│   │   ├── CanadaProductFactory.java
+│   │   └── MexicoProductFactory.java
+│   ├── products/
+│   │   ├── Product.java (interface)
+│   │   ├── Apple.java
+│   │   └── Laptop.java
+│   ├── utility/
+│   │   └── PriceReader.java
+│   ├── tests/
+│   │   ├── CanadaProductFactoryTests.java
+│   │   ├── MexicoProductFactoryTests.java
+│   │   └── PriceReaderTests.java
+│   └── Driver.java
+├── docs/
+│   └── UML_Diagram.pdf
+├── assets/
+│   ├── canada-prices.txt
+│   └── mexico-prices.txt
+├── README.md
+├── clean.sh
+├── test.sh
+└── run.sh
 ```
 
 ### Products
+
 - `Product.java (interface)` - interface that is to be implemented by more specific products (Apple and Laptop)
 - `Apple.java` - class that implements `Product` and represents an apple
 - `Laptop.java` - class that implements `Product` and represents a laptop
@@ -43,6 +58,7 @@ The code structure is as folllows:
 The following text file assets are read by the program:
 
 canada-prices.txt
+
 ```
 apple
 5.99
@@ -51,6 +67,7 @@ laptop
 ```
 
 mexico-prices.txt
+
 ```
 apple
 3.99
@@ -60,7 +77,7 @@ laptop
 
 ## Running this Program
 
-To run this program, ensure you are in the root of the project, where the path `assets/canada-prices.txt` and `assets/mexico-prices.txt` are valid paths. 
+To run this program, ensure you are in the root of the project, where the path `assets/canada-prices.txt` and `assets/mexico-prices.txt` are valid paths.
 
 Run the following commands in the terminal:
 
@@ -78,7 +95,7 @@ If you are on a UNIX machine, you can run the `run.sh` script by running the fol
 ### Output Example
 
 ```sh
-jeremytubongbanua@Jeremys-MacBook-Air sofe3650u-assignment1 % ./run.sh 
+jeremytubongbanua@Jeremys-MacBook-Air sofe3650u-assignment1 % ./run.sh
 
 Canada:
 
